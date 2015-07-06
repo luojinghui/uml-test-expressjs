@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>exam_test</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="head">
+        <div id="header">西安欧亚学院</div>
+        <hr class="hr">
+
+        <form action="result" method="post">
+
+            <div id="title">
+                <h1>统一建模语言理论测试</h1>
+            </div>
+            <div class="titleinfo">考试科目：
+                <input type="text" value="统一建模语言UML" id="kemu" name="userkemu" readonly="readonly"> 时间：
+                <input type="text" value="100分钟" readonly="readonly"> 得分：
+                <input type="text" id="sub_score" name="userscore" readonly="readonly">
+
+                <br>
+                <br> 班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：
+                <input type="text" id="banji" name="userbanji" placeholder="请输入班级"> 学号：
+                <input type="number" id="xuehao" name="userxuehao" placeholder="请输入学号"> 姓名：
+                <input type="text" id="xingming" name="username" placeholder="请输入姓名">
+            </div>
+            <br>
+            <br>
+    </div>
+    <div id="content">
+        <div class="tiankong"><b>一、   填空题</b></div>
+        <span>1.&nbsp;UML的中文全称是：</span>
+        <input type="text" id="umlzhongwen" name="umlzhongwen">
+        <br>
+        <span>2.&nbsp;对象最突出的特征是：</span>
+        <input type="text" id="objtezheng-1" name="objtezheng-1">、
+        <input type="text" id="objtezheng-2" name="objtezheng-1">、
+        <input type="text" id="objtezheng-3" name="objtezheng-1">
+        <br>
+        <br>
+
+        <div><b>二、   选择题</b></div>
+        <span>1.&nbsp;UML与软件工程的关系是：[<span id="one_select_1"></span>]</span>
+        <br>
+
+        <label for="oneselect">
+            <input type="radio" id="oneselect" name="one_select_1" value="A">&nbsp;(A):UML就是软件工程；</label>
+        <br>
+        <label for="twoselect">
+            <input type="radio" id="twoselect" name="one_select_1" value="B">&nbsp;(B):UML参与到软件工程中软件开发过程的几个阶段；</label>
+        <br>
+        <label for="threeselect">
+            <input type="radio" id="threeselect" name="one_select_1" value="C">&nbsp;(C):UML与软件工程无关；</label>
+        <br>
+        <label for="fourselect">
+            <input type="radio" id="fourselect" name="one_select_1" value="D">&nbsp;(D):UML是软件工程的一部分；</label>
+        <br>
+
+        <br>
+        <span>2.&nbsp;java语言支持：[<span id="one_select"></span>]</span>
+        <br>
+
+        <label for="fiveselect">
+            <input type="radio" id="fiveselect" name="one_select" value="A">&nbsp;(A):单继承；</label>
+        <br>
+        <label for="sixselect">
+            <input type="radio" id="sixselect" name="one_select" value="B">&nbsp;(B):多继承；</label>
+        <br>
+        <label for="sevenselect">
+            <input type="radio" id="sevenselect" name="one_select" value="C">&nbsp;(C):单继承与多继承都支持；</label>
+        <br>
+        <label for="eightselect">
+            <input type="radio" id="eightselect" name="one_select" value="D">&nbsp;(D):单线程和多线程都不支持；</label>
+        <br>
+        <br>
+
+        <div><b>三、   多选题</b></div>
+        <span>1.&nbsp;用例的粒度分为以下那三种：[<span id="check_box1"></span>]</span>
+        <br>
+        <label for="checkbox1">
+            <input id="checkbox1" type="checkbox" name="check_box1" class="check_box1" value="A">(A):概述级；</label>
+        <br>
+        <label for="checkbox2">
+            <input id="checkbox2" type="checkbox" name="check_box1" class="check_box1" value="B">(B):需求级；</label>
+        <br>
+        <label for="checkbox3">
+            <input id="checkbox3" type="checkbox" name="check_box1" class="check_box1" value="C">(C):用户目标级；</label>
+        <br>
+        <label for="checkbox4">
+            <input id="checkbox4" type="checkbox" name="check_box1" class="check_box1" value="D">(D):子功能级；</label>
+        <br>
+        <br>
+
+        <span>2.&nbsp;类图由那三部分组成：[<span id="check_box2"></span>]</span>
+        <br>
+        <label for="checkbox5">
+            <input type="checkbox" id="checkbox5" name="check_box2" class="check_box2" value="A">(A):名称（name）；</label>
+        <br>
+        <label for="checkbox6">
+            <input type="checkbox" id="checkbox6" name="check_box2" class="check_box2" value="B">(B):属性（Attribute）；</label>
+        <br>
+        <label for="checkbox7">
+            <input type="checkbox" id="checkbox7" name="check_box2" class="check_box2" value="C">(C):操作（Operation）；</label>
+        <br>
+        <label for="checkbox8">
+            <input type="checkbox" id="checkbox8" name="check_box2" class="check_box2" value="D">(D):方法（function）；</label>
+        <br>
+        <br>
+
+        <div><b>四、   判断题</b></div>
+        <span>1.&nbsp;用例图只是用于和用户交流和沟通的，用户确定需求；</span>
+        <input type="radio" name="yongli" value="true" />对
+        <input type="radio" name="yongli" value="false" />错
+        <br>
+        <span>2.&nbsp;在状态图中，终止状态在一个状态图中允许有任意多个；</span>
+        <input type="radio" name="zhuangtai" value="true" />对
+        <input type="radio" name="zhuangtai" value="false" />错
+        <br>
+        <br>
+
+        <div><b>五、   简答题</b></div>
+        <span>1.&nbsp;什么是模型，以及模型的表现形式；</span>
+        <br>
+        <textArea rows="4" cols="50" name="textArea" style="resize:none"></textArea>
+        <br>
+        <br>
+
+    </div>
+
+    <!-- <script>document.body.innerText = score()</script> -->
+    <div id="footer">
+        <input id="submit" type="submit" value="提交">
+        <input type="reset" value="重置">
+        <div id="back"><a href="#top">top</a></div>
+    </div>
+    </form>
+</body>
+<script src="./lodash.min.js"></script>
+<script src="./FormValueGetter.js"></script>
+<script src="./score.js"></script>
+<script src="./question.js"></script>
+<script src="./Answer.js"></script>
+
+</html>
